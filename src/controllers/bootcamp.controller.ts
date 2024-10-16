@@ -26,5 +26,8 @@ export class BootcampController {
         return `aqui se va a actualizar el bootcamp:  ${id}`;
     }
 
-   
+    @Delete (":id")
+    deleteBootcamp(@Param('id') id: string): string{
+        return `aqui se va a eliminar el bootcamp:  ${id}`;
+    }
 }
