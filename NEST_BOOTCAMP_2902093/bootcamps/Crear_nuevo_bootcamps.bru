@@ -5,7 +5,22 @@ meta {
 }
 
 post {
-  url: http://localhost:3002/bootcamp
-  body: none
+  url: http://localhost:3002/bootcamps
+  body: json
   auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "JS AVANZADO",
+    "phone": 255777009,
+    "address":"calle 52 13 65 sena",
+    "topics": "web,js, programacion",
+    "averageRaiting":8.5,
+    "createdAd":"2024-02-02"
+  }
 }
